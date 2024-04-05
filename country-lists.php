@@ -6,7 +6,7 @@ Version: 0.1
 
 // countries list
 add_action('rest_api_init', function () {
-   register_rest_route('wp-data/v1', '/country-lists/', array(
+   register_rest_route('wp-data/v1', '/country-lists', array(
        'methods' => 'GET',
        'callback' => 'get_country_lists',
    ));
